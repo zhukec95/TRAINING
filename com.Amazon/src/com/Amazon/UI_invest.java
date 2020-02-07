@@ -1,9 +1,10 @@
 package com.Amazon;
+
 import java.util.Scanner;
 
-public class UI {
+public class UI_invest {
 	public static void main(String[] args) {
-		bankAccount act = new bankAccount();
+		bankAccount act = new investmentAccount();
 		Boolean ctn = true;
 		while(ctn) {
 			System.out.println("1. Account Balance");
@@ -33,12 +34,5 @@ public class UI {
 				break;
 			}	
 		}
-		try {
-			double b = act.getBalance();
-		}
-		catch (Exception e) {
-
-	         System.out.println("Exception occurred");
-	    }
 	}
 }

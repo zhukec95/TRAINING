@@ -6,6 +6,13 @@ public class bankAccount {
 	private String name = "KEN";
 	private String email = "zhukec95@gmail.com";
 	private String phoneNumber = "8184517699";
+	private String SSN = "000000000";
+	public String getSSN() {
+		return SSN;
+	}
+	public void setSSN(String sSN) {
+		SSN = sSN;
+	}
 	public void deposit(double amt) {
 		this.balance += amt;
 	}
