@@ -18,43 +18,22 @@ public class ContactUI {
 			int input = s1.nextInt();
 			switch(input) {
 			case 1:
-				System.out.println("Enter Name.");
-				Scanner s2 = new Scanner(System.in);
-				String n2 = s2.nextLine();
-				cts.newName(n2);
+				cts.newName();
 				break;
 			case 2:
-				System.out.println("Enter Name");
-				Scanner s3 = new Scanner(System.in);
-				String n3 = s3.nextLine();
-				System.out.println("Enter Phone#.");
-				Scanner s4 = new Scanner(System.in);
-				String num = s4.nextLine();
-				cts.changePhone(n3, num);
+				cts.changePhone();
 				break;
 			case 3:
-				System.out.println("Enter Name");
-				Scanner s5 = new Scanner(System.in);
-				String n5 = s5.nextLine();
-				System.out.println("Enter Email Address.");
-				Scanner s6 = new Scanner(System.in);
-				String mail = s6.nextLine();
-				cts.changeEmail(n5, mail);
+				cts.changeEmail();
 				break;
 			case 4:
-				System.out.println("Enter Name to Remove");
-				Scanner s7 = new Scanner(System.in);
-				String n7 = s7.nextLine();
-				cts.removeContact(n7);
+				cts.removeContact();
 				break;
 			case 5:
 				cts.printContact();
 				break;
 			case 6:
-				System.out.println("Enter Name to Print");
-				Scanner s9 = new Scanner(System.in);
-				String n9 = s9.nextLine();
-				cts.queryContact(n9);
+				cts.queryContact();
 				break;
 			case 7:
 				ctn = false;
